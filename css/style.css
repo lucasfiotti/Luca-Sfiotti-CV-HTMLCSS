@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("https://i1.sndcdn.com/artworks-000334247562-22hecp-t500x500.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+* {
+    scroll-behavior: smooth;
+    animation: fadein 1s;
+}
+
+header {
+    background-color: black;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 250ms linear;
+    text-align: center;
+}
+
+a:hover {
+    color: darkred;
+}
+
+hr {
+    border: none;
+    border-top: 1.5px solid #fff;  
+    width: 50%;  
+    margin: 20px auto;  
+    position: absolute;
+    left: 50%;  
+    transform: translateX(-50%)
+}
+
+#education, #experience {
+    padding: 20px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; 
+    text-align: center;
+}
+
+.pdp img {
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px; 
+}
+
+.réseauxPro {
+    justify-content: center;
+    align-items: center;
+    a img {
+        width: 6%;
+        height: 10%;
+        transition: transform 0.3s ease;
+    }
+    a:hover img {
+        transform: scale(1.15);
+    }
+}
+
+
+#competences {
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+#skills {
+    margin-bottom: 20px;
+}
+
+.barreDeChargement {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chargement {
+    background-color: darkred;
+    height: 100%;
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+}
+
+.bouton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: darkred;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property:all;
+    transition-duration: 300ms;
+    transition-timing-function:ease;
+}
+
+.bouton:hover {
+    background-color:red;
+    transform: scale(1.15);
+    color:white;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    padding-top:20px;
+}
+
